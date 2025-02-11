@@ -137,21 +137,32 @@
 								<!-- 	A <br> tag puts in a break so that the text that follows it displays on
 									the next line.
 								-->
-								<b>JWST LEGGOS</b><br> As it turns out, strongly-lensed galaxies act as an excellent magnifying glass 
-								for early universe star forming clumps. Observing and manually tagging clumps is tedious and prone to error. 
-								By automating this process, we can focus our analysis on these clumps, elucidating information about the metallicity, 
-								stellar masses, and star formation histories of high-redshift galaxies. 
-								My research is focused on developing a software pipeline for dimension reduction using Uniform Manifold Approximation and Projection (UMAP) to 
-								automatically identify and group together these star forming clumps from JWST/NIRCam imagery. The pipeline will take in FITS files of lensed 
-								galaxies, reduce the data to 2 or 3 dimensions, and output a topological map that distinguishes star forming regions from non star forming regions. 
-								By automating this process with UMAP, the typically error-prone and difficult task of manually identifying and tagging clumps is avoided. 
-								Isolating these star-forming regions prepares them to be analyzed for other parameters such as metallicity, dust content, and stellar mass distribution, 
-								ultimately leading to an increase in our understanding of the physics of early universe star formation and galactic dynamics.
+								<b>JWST LEGGOS</b><br> Strong gravitational lensing provides a natural magnifying effect, 
+								allowing for detailed studies of high-redshift star-forming clusters. While there have been studies on the 
+								physical properties of these clumps in strongly lensed galaxies, there is a distinct lack of software to automatically 
+								identify and analyze regions of stellar formation. Typical methods of clump identification rely on contrast enhancement 
+								through image smoothing and subtraction, followed by the use of visual and automatic source detection software. 
+								While generally effective, these approaches require careful parameter tuning and manual validation, 
+								limiting their efficiency and reproducibility. These methods also suffer from inaccuracies due to contamination from the 
+								diffuse host galaxy, bright neighboring sources, and intracluster light. We present a novel software pipeline titled SUMAC 
+								(Software for Uniform Manifold Approximation of Clusters) that automatically processes FITS files of lensed galaxies, reduces 
+								the data using Uniform Manifold Approximation and Projection (UMAP), and outputs a topological map clustering together pixels with 
+								similar characteristics. Users can specify parameters of interest, including flux, spectral energy distribution, and morphology. 
+								We utilize JWST/NIRCam imagery of the z =2.481 lensed galaxy SGAS1110, confirming the functionality of SUMAC by automatically 
+								tagging points in the UMAP topological space, mapping them back to the imagery of the lensed galaxy to show alignment with 
+								visual star forming clusters. We additionally analyze spectroscopic data for the galaxy, ensuring pixels that SUMAC identifies as 
+								corresponding to star-forming clumps match characteristics such as age, metallicity, and emission line ratios that are 
+								indicative of stellar formation. SUMAC’s ability to handle large datasets efficiently, without requiring manual 
+								validation or extensive parameter tuning, ensures a more reproducible and scalable approach to high-redshift galactic 
+								analysis. SUMAC represents a significant advancement in the field of astronomical image processing, offering a powerful 
+								tool for studying early universe galactic dynamics.
+
 
 							</p>
-							<p>
+							<!-- <p>	
+								
 								<b>Project II Title</b><br>Project description, including further links to posters, talks, publications.
-							</p>
+							</p>-->
 						</article>
 
 						<!-- Here is the "Community" card. -->
